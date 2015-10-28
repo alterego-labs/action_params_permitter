@@ -14,5 +14,11 @@ module ActionParamsPermitter
 
     autoload :Main
     autoload :Resource
+
+    module Concerns
+      extend ActiveSupport::Autoload
+
+      autoload :TopLevelResourceBlockExistenceChecking
+    end
   end
 end

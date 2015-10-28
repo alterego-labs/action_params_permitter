@@ -7,6 +7,8 @@ module ActionParamsPermitter
     # state - initial state for builder
     #
     class Main
+      prepend Concerns::TopLevelResourceBlockExistenceChecking
+
       attr_reader :state
 
       def initialize(state)
@@ -56,6 +58,12 @@ module ActionParamsPermitter
       def attributes(*names)
         names.each { |name| attribute(name) }
         state
+      end
+
+      private
+
+      def top_level_builder?
+        state.is_a?(Hash)
       end
     end
   end

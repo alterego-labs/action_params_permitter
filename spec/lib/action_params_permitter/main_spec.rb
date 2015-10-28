@@ -27,4 +27,14 @@ describe ActionParamsPermitter::Base do
       )
     end
   end
+
+  context 'when top level resource without block' do
+    it 'raises error' do
+      expect{
+        TopLevelWithoutBlockPermitter = ActionParamsPermitter::Base.new do
+          resource :without_block
+        end
+      }.to raise_error(ActionParamsPermitter::TopLevelResourceWithoutBlockError)
+    end
+  end
 end
