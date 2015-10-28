@@ -10,3 +10,5 @@ group :development, :test do
   gem 'shoulda-matchers', '2.8.0'
   gem 'fabrication', '2.14.0'
 end
+
+gem "codeclimate-test-reporter", group: :test, require: nil

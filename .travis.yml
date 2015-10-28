@@ -1,4 +1,14 @@
 language: ruby
-rvm:
-  - 2.1.5
+
 before_install: gem install bundler -v 1.10.6
+
+cache: bundler
+
+rvm:
+    - 2.2.2
+
+script: 'CODECLIMATE_REPO_TOKEN=5924b5a882e5cec32dfae43025aafac9164fc772aa776e6249a9430713ca56ed  bundle exec rake'
+
+addons:
+    code_climate:
+      repo_token: 5924b5a882e5cec32dfae43025aafac9164fc772aa776e6249a9430713ca56ed

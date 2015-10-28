@@ -5,6 +5,9 @@ require 'rspec/its'
 
 require 'pry-nav'
 
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
+
 Dir[File.dirname(__FILE__) + '/support/**/*.rb'].each {|file| require file }
 
 RSpec.configure do |config|
