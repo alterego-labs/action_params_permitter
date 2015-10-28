@@ -8,6 +8,7 @@ module ActionParamsPermitter
   extend ActiveSupport::Autoload
 
   autoload :Base
+  autoload :PermitProcessor
 
   module Builders
     extend ActiveSupport::Autoload

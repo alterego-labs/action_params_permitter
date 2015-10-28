@@ -1,4 +1,6 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'active_support'
+require 'action_controller'
 require 'action_params_permitter'
 
 require 'rspec/its'
