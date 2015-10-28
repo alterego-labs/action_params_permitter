@@ -19,6 +19,7 @@ module ActionParamsPermitter
       extend ActiveSupport::Autoload
 
       autoload :TopLevelResourceBlockExistenceChecking
+      autoload :ResourceRequiring
     end
   end
 end

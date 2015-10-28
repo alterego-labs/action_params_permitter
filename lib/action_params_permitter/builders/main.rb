@@ -8,6 +8,7 @@ module ActionParamsPermitter
     #
     class Main
       prepend Concerns::TopLevelResourceBlockExistenceChecking
+      prepend Concerns::ResourceRequiring
 
       attr_reader :state
 
