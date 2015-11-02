@@ -121,7 +121,7 @@ Usage for so simple example is excessive.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/action_params_permitter/action_params_permitter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/alterego-labs/action_params_permitter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 ## License
 
