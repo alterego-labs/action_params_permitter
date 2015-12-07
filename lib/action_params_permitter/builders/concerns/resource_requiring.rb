@@ -14,8 +14,8 @@ module ActionParamsPermitter
         end
 
         def resource(name, options = {}, &block)
-          @is_required = true if options.fetch(:required, false)
           check_double_requiring(options)
+          @is_required = true if options.fetch(:required, false)
           super
         end
 

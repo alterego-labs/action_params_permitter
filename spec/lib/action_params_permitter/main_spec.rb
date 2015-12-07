@@ -51,5 +51,16 @@ describe ActionParamsPermitter::Base do
         }.to raise_error(ActionParamsPermitter::DoubleRequireError)
       end
     end
+
+    context 'when defining single required resource on top' do
+      it 'does not raises error' do
+        expect{
+          ActionParamsPermitter::Base.new do
+            resource :tutorial, required: true do
+            end
+          end
+        }.to_not raise_error(ActionParamsPermitter::DoubleRequireError)
+      end
+    end
   end
 end

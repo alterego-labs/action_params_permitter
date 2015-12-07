@@ -110,6 +110,16 @@ class AnyController
 end
 ```
 
+You may define root resource as required like this:
+
+```ruby
+TutorialsParamsPermitter = ActionParamsPermitter::Base.new do
+  resource :tutorial, required: true do
+    ...
+  end
+end
+```
+
 ## Usage with Form Object gems
 
 There are many gems providing form objects, for example `reform`. And if you use a such one `action_params_permitter` is not helps you. Form Object gems inside carries same functional and `action_params_permitter` usage is excessive.
